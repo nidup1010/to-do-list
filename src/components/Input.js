@@ -13,6 +13,7 @@ export default function Input(props) {
     event.preventDefault();
     if (item.length > 5) {
       props.onAdd(item);
+      setItem("");
     } else {
       alert("list is short, add list greater than 5");
     }
